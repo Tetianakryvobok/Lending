@@ -1,24 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-:root {
-   $fontcolor: rgba(255, 255, 255, 1);
-   $max-width: 1903px;
-   $max-width_container: 1200px;
+
+.wrapper {
+   max-width: 1903px;
+   font-family: 'Poppins';
+   color: #ffffff;
+  }
+
+  
+.background {
+   display: grid;
+   background: url(./img/grassbgjpg.jpg);
+   justify-items: center;
+   height: 840px;
+}
+.head_title_container {
+   width: 400px;
+   height: 96px;
+   position: relative;
+   margin-bottom: 35px;
+   
+     img {
+      position: absolute;
+      display: block;
+      left: -30%;
+      top: 50%;
+      height: 96px;
+      
+   }
+  
+   .tophead_title {
+      font-weight: 800;
+      font-size: 3.75rem;
+      padding-bottom: 50px;
+      
+
+      span {
+         letter-spacing: 0.26em;
+         font-size: 1.7rem;
+         display:block;
+         margin: 0;
+         padding: 0;
+      }
+   }
+   
 }
 
-html,
-body {
-   height: 100%;
-}
-.wrapper {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   font-family: Poppins;
-   font-weight: 400;
-}
-.main {
-   flex: 1 1 auto;
-}
+.btn-head{
+   color: #ffffff;
+    text-decoration: none;  
+   background: rgba(0, 0, 0, 0.5);
+    border-radius: 59px;
+    width: 374px;
+    height: 60px; 
+    padding: 19px 48px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    
+ }
+
+    
+    .head_title{
+      padding: 17px;
+      text-align: center;
+      width: 983px;
+      font-weight: 900;
+      font-size: 9rem;
+      
+      text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+      }
+
+
+
 .button {
    font-weight: 700;
    font-size: 18px;
@@ -32,7 +85,9 @@ body {
    height: 70px;
    width: 180px;
 }
+
 .footer {
    color: #324b29;
    height: 145px;
+   
 }
