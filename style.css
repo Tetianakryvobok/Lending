@@ -2,21 +2,21 @@
 .wrapper {
   max-width: 1903px;
   font-family: "Poppins";
-  color: #ffffff;
 }
 
-.background {
+.header {
   display: grid;
   background: url(./img/grassbgjpg.jpg);
   justify-items: center;
   height: 840px;
+  color: #ffffff;
 }
 
 .head_title_container {
-  width: 400px;
   height: 96px;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .head_title_container img {
   position: absolute;
@@ -28,50 +28,120 @@
 .head_title_container .tophead_title {
   font-weight: 800;
   font-size: 3.75rem;
-  padding-bottom: 50px;
+  padding-bottom: 2rem;
 }
 .head_title_container .tophead_title span {
   letter-spacing: 0.26em;
   font-size: 1.7rem;
   display: block;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+.top_button {
+  margin-left: -40px;
 }
 
 .btn-head {
+  width: 100%;
   color: #ffffff;
-  text-decoration: none;
+  padding: 19px 48px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 59px;
-  width: 374px;
-  height: 60px;
-  padding: 19px 48px;
   font-weight: 500;
   font-size: 1.125rem;
   text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-head:hover {
+  background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
 }
 
 .head_title {
-  padding: 17px;
   text-align: center;
-  width: 983px;
   font-weight: 900;
   font-size: 9rem;
   text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  margin-bottom: 4rem;
 }
 
-.button {
+.button_container {
+  margin-bottom: 6rem;
+}
+
+.btn-main {
+  text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 27px;
+  padding: 22px 53px;
   text-align: center;
   color: #48924f;
   background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #f9f9f9 100%);
   box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
   border-radius: 35px;
-  width: 180px;
-  height: 70px;
-  width: 180px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.btn-main:hover {
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.services_wrapper {
+  display: grid;
+  margin: 0 6rem;
+}
+
+.title {
+  color: rgb(130, 130, 130);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
+  position: relative;
+}
+.title img {
+  position: absolute;
+  left: 27%;
+  top: 50%;
+}
+
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.card {
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 385px;
+}
+.card:hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.services_content {
+  margin: 30px;
+  text-align: left;
+}
+
+.title_services_container {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(13, 77, 20);
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0D4D14;
 }
 
 .footer {
