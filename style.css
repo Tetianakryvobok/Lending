@@ -82,15 +82,20 @@
   box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
   border-radius: 35px;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 .btn-main:hover {
   background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .services_wrapper {
+  margin: 0rem 5rem;
+  max-width: 1200px;
   display: grid;
-  margin: 0 6rem;
+  justify-items: center;
+}
+.services_wrapper.button_container {
+  margin-bottom: 0;
+  color: rgb(108, 185, 129);
 }
 
 .title {
@@ -103,25 +108,26 @@
 }
 .title img {
   position: absolute;
-  left: 27%;
-  top: 50%;
+  left: 38%;
+  top: 100%;
+  transform: translate(0, -50%);
 }
 
 .services_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  margin-bottom: 3rem;
+  grid-column-gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .card {
   border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
   width: 385px;
 }
 .card:hover {
-  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .services_content {
@@ -141,7 +147,67 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #0D4D14;
+  color: #0d4d14;
+}
+
+.info_container {
+  background: url(./img/grassbg2.jpg);
+}
+
+.feedback {
+  display: grid;
+  justify-items: center;
+}
+
+.feedback_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.813rem;
+  max-width: 1200px;
+}
+
+.feedback_container {
+  max-width: 577px;
+  padding: 1.875rem;
+  border: 1px solid #6cb981;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.875rem;
+}
+
+.feedback_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(108, 185, 129);
+}
+
+.checked {
+  color: rgb(108, 185, 129);
+}
+
+.form {
+  width: 374px;
+}
+.form input {
+  width: 374px;
+  height: 56px;
+  background: #9fdea9;
+  border-radius: 61px;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: none;
+}
+.form button {
+  border: 3px solid #4db96b;
+  border-radius: 61px;
+  width: 168px;
+  height: 56px;
+}
+.form button:hover {
+  background: #27b14a;
 }
 
 .footer {
