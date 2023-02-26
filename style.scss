@@ -182,9 +182,19 @@
    color: rgba(108, 185, 129, 1);
 }
 
-.form {
-   width: 374px;
+.contacts {
+   display: grid;
+   justify-items: center;
+}
 
+.contacts_container {
+   display: flex;
+   justify-content: space-between;
+   gap: 6.25rem;
+}
+
+.form {
+   max-width: 374px;
    input {
       width: 374px;
       height: 56px;
@@ -202,6 +212,39 @@
       &:hover {
          background: #27b14a;
       }
+   }
+}
+
+.contactlist {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: rgba(51, 51, 51, 1);
+   li {
+      list-style: none;
+      max-width: 320px;
+      max-height: 24px;
+      padding-bottom: 1.875rem;
+   }
+
+   .mail {
+      background: url(./img/ic_round-mail.png) no-repeat;
+      padding-left: 3rem;
+      a {
+         text-decoration: none;
+         color: inherit;
+      }
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+   .telnumber {
+      background: url(./img/ic_round-call.png) no-repeat;
+      padding-left: 3rem;
+   }
+   .adress {
+      background: url(./img/ic_round-location-on.png) no-repeat;
+      padding-left: 3rem;
    }
 }
 

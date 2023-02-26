@@ -188,8 +188,19 @@
   color: rgb(108, 185, 129);
 }
 
+.contacts {
+  display: grid;
+  justify-items: center;
+}
+
+.contacts_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25rem;
+}
+
 .form {
-  width: 374px;
+  max-width: 374px;
 }
 .form input {
   width: 374px;
@@ -208,6 +219,38 @@
 }
 .form button:hover {
   background: #27b14a;
+}
+
+.contactlist {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(51, 51, 51);
+}
+.contactlist li {
+  list-style: none;
+  max-width: 320px;
+  max-height: 24px;
+  padding-bottom: 1.875rem;
+}
+.contactlist .mail {
+  background: url(./img/ic_round-mail.png) no-repeat;
+  padding-left: 3rem;
+}
+.contactlist .mail a {
+  text-decoration: none;
+  color: inherit;
+}
+.contactlist .mail:hover {
+  text-decoration: underline;
+}
+.contactlist .telnumber {
+  background: url(./img/ic_round-call.png) no-repeat;
+  padding-left: 3rem;
+}
+.contactlist .adress {
+  background: url(./img/ic_round-location-on.png) no-repeat;
+  padding-left: 3rem;
 }
 
 .footer {
