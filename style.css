@@ -2,6 +2,8 @@
 .wrapper {
   max-width: 1903px;
   font-family: "Poppins";
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .header {
@@ -93,7 +95,7 @@
   display: grid;
   justify-items: center;
 }
-.services_wrapper.button_container {
+.services_wrapper .button_container {
   margin-bottom: 0;
   color: rgb(108, 185, 129);
 }
@@ -108,7 +110,7 @@
 }
 .title img {
   position: absolute;
-  left: 38%;
+  left: -2%;
   top: 100%;
   transform: translate(0, -50%);
 }
@@ -150,8 +152,30 @@
   color: #0d4d14;
 }
 
+.info_wrapper img {
+  position: absolute;
+  left: 58%;
+  top: 100%;
+  transform: translate(0, -55%);
+}
+
 .info_container {
   background: url(./img/grassbg2.jpg);
+  display: flex;
+  height: 732px;
+  gap: 3.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info_container p {
+  margin-top: 9.625rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  width: 360px;
 }
 
 .feedback {
@@ -191,6 +215,7 @@
 .contacts {
   display: grid;
   justify-items: center;
+  margin-bottom: 3.125rem;
 }
 
 .contacts_container {
@@ -200,6 +225,8 @@
 }
 
 .form {
+  display: grid;
+  justify-items: center;
   max-width: 374px;
 }
 .form input {
@@ -212,10 +239,12 @@
   border: none;
 }
 .form button {
+  justify-items: center;
   border: 3px solid #4db96b;
   border-radius: 61px;
   width: 168px;
   height: 56px;
+  cursor: pointer;
 }
 .form button:hover {
   background: #27b14a;
@@ -232,10 +261,10 @@
   max-width: 320px;
   max-height: 24px;
   padding-bottom: 1.875rem;
+  padding-left: 3rem;
 }
 .contactlist .mail {
   background: url(./img/ic_round-mail.png) no-repeat;
-  padding-left: 3rem;
 }
 .contactlist .mail a {
   text-decoration: none;
@@ -246,14 +275,12 @@
 }
 .contactlist .telnumber {
   background: url(./img/ic_round-call.png) no-repeat;
-  padding-left: 3rem;
 }
 .contactlist .adress {
   background: url(./img/ic_round-location-on.png) no-repeat;
-  padding-left: 3rem;
 }
 
 .footer {
-  color: #324b29;
+  background: rgb(50, 75, 41);
   height: 145px;
 }/*# sourceMappingURL=style.css.map */
